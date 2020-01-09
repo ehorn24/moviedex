@@ -5,7 +5,7 @@ const movies = require("./moviedex-api");
 const app = express();
 app.use(morgan("dev"));
 
-app.get("/movies", (req, res) => {
+app.get("/movie", (req, res) => {
   res.json(movies);
 });
 
